@@ -51,6 +51,13 @@ const ModalDetailProperty = ({property}) => {
                     
                   </Dialog.Title> */}
                   <div className="mt-2">
+                    <div className="w-full flex justify-between mt-1 my-3">
+                      <h2 className="text-gray-900  text-xl text-balance font-bold w-9/12">
+                        {property.title ?? 'Propiedad sin titulo registrado'}
+                      </h2>
+                      <p className="text-gray-800 text-md w-3/12 text-end">Propiedad: {property.id}</p>
+                    </div>
+                    
                         <GalleryCarousel property={property} />
                         <Characteristics property={property} />
                         <div className="sm:col-span-6 col-span-3 xl:col-span-1 bg-white h-auto order-1 xl:order-2">

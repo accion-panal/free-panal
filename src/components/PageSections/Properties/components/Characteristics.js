@@ -32,7 +32,7 @@ const Characteristics = ({ property }) => {
 
   return (
     <div className="flex flex-col p-5 mt-5 md:xl:mt-24 lg:xl:mt-24 xl:mt-24">
-            <h1 className='text-lg'>Características</h1>
+      <h1 className='text-lg'>Características</h1>
       <div className="flex w-full flex-col xl:flex-row xl:w-6/6 justify-between mb-3">
         <div className="flex items-center w-full xl:w-[33%] my-1 text-gray-700 text-base font-medium">
           <span className="text-gray-400 mr-1">
@@ -80,9 +80,7 @@ const Characteristics = ({ property }) => {
       </div>
 
       <div className="my-7">
-        <h2 className="text-gray-600 mt-2 text-lg text-balance">
-          {title ?? 'Propiedad sin titulo registrado'}
-        </h2>
+
         <br />
         <h5 className="text-lg">Descripción</h5>
         <p className="text-gray-600">
