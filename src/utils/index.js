@@ -44,3 +44,9 @@ export const parseRealtorDate = (currentTime) => {
   const parsedDate = `${day}/${month}/${year} ${hours}:${mins}`;
   return parsedDate;
 };
+
+
+export const getCurrentYear = () => {
+  const currentDate = new Date();
+  return currentDate.getFullYear();
+};
