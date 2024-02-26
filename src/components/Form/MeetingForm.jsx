@@ -236,7 +236,7 @@ const MeetingForm = ({ title, subtitle, }) => {
   };
 
   return (
-    <div className="rounded-[25px] p-4 my-10 xl:py-5 xl:px-2 xl:m-0 w-full xl:w-[500px] shadow-xl">
+    <div className="rounded-[10px] p-4 my-10 xl:py-5 xl:px-2 xl:m-0 w-full xl:w-[500px] shadow-xl">
       {/* xl:w-3/5 */}
         <div className="text-center  rounded-full  font-semibold mb-2">
           <h2 className="text-5xl xl:text-4xl font-semibold py-2 text-primary uppercase">{title}</h2>
@@ -262,19 +262,6 @@ const MeetingForm = ({ title, subtitle, }) => {
               onChange={handleNameChange}
             />
           </div>
-
-          {/* <div className="max-sm:py-2">
-            <input
-              className="block w-full rounded-full bg-white py-2 px-2 outline-2 border-2 border-[#E85512D4]"
-              type="text"
-              placeholder="Apellido"
-              name="user_lastname"
-              id="lastname"
-              value={formData?.lastName}
-              onChange={handleLastname}
-            />
-          </div> */}
-
           <div className="max-sm:py-2">
             <input
               className="block w-full rounded-sm bg-white py-2 px-2 outline-2 border-2 border-gray-200"
@@ -309,34 +296,6 @@ const MeetingForm = ({ title, subtitle, }) => {
               onChange={handleMessageChange}
             ></textarea>
           </div>
-          {/* <div className="max-sm:py-2">
-            <input
-              className="block w-full rounded-full bg-white py-2 px-2 outline-2 border-2 border-[#E85512D4]"
-              type="date"
-              name="date"
-              id="date"
-                value={formData?.meetingDate}
-                              onChange={(e) =>
-                                  setFormData({
-                                      ...formData,
-                                      meetingDate: e.target.value,
-                                  })
-                              } 
-              value={meetingDate}
-              onChange={handleDateChange}
-            />
-          </div> */}
-{/* 
-          <div className="max-sm:py-2">
-            <input
-              className="block w-full rounded-full bg-white py-2 px-2 outline-2 border-2 border-[#E85512D4]"
-              type="time"
-              name="time"
-              id="time"
-              value={meetingTime}
-              onChange={handleTimeChange}
-            />
-          </div> */}
         </div>
 
         {/* <div className="w-5/6 mx-auto my-14 mb-10 flex items-center justify-center">
@@ -380,7 +339,7 @@ const MeetingForm = ({ title, subtitle, }) => {
           <Button
             value="Send"
             type="submit"
-            className="bg-primary rounded-full text-white px-6 py-2 hover:bg-primary-opacity"
+            className="bg-secondary rounded-sm text-white px-6 py-2 hover:bg-secondary-opacity"
           >
             <div className="text-lg font-medium capitalize mx-auto">
               <span className="max-h-10">
