@@ -27,11 +27,11 @@ const MainCarousel = ({ data }) => {
                 }}
               />
        
-              <div className=" absolute top-0 left-0 w-full items-center xl:w-[100%] h-full  xl:p-2 xl:pl-4 bg-primary-300 bg-opacity-20">
+              <div className=" absolute top-0 left-0 w-full items-center xl:w-[100%] h-full  xl:p-2 xl:pl-4 bg-black bg-opacity-50">
                   <Fade delay={100} direction='left' triggerOnce='false'>
-                    <div className="grid grid-cols-1 mx-auto p-10 pt-16 xl:pt-20 ">
+                    <div className="grid grid-cols-1 mx-auto p-10 pt-16 xl:pt-28 ">
                       {/* <img src={slide.imgMe} className='rounded-full w-36 h-36 xl:w-56 xl:h-56 object-cover my-3 mx-auto xl:my-6 xl:mx-56'></img> */}
-                      <h2 className="text-4xl font-bold xl:text-5xl text-center pb-2 text-white drop-shadow-lg xl:my-3 xl:mx-4 w-full">
+                      <h2 className="text-3xl font-bold xl:text-[40px] text-center pb-2 text-white drop-shadow-xl xl:my-3 xl:mx-4 w-full">
                         {slide.title}
                       </h2>
                       <p className='text-lg xl:text-xl text-white text-center my-3'>{slide.desc}</p>
