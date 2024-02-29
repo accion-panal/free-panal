@@ -23,7 +23,7 @@ const UnneLogoSvg = (props) => {
 
 
   return (
-    <svg ref={svgRef} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" {...props} width={220}>
+    <svg ref={svgRef} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" {...props} width={120}>
     <g transform="matrix(.02762 0 0 -.02762 -.964 120.742)">
       <ellipse
         cx={548.826}
@@ -31,7 +31,8 @@ const UnneLogoSvg = (props) => {
         rx={382.644}
         ry={46.553}
         style={{
-          fill: "#d8d8d8",
+          // fill: "#d8d8d8",
+          fill: "#d1d1d1",
           stroke: "#000",
         }}
         transform="scale(1 -1)"
