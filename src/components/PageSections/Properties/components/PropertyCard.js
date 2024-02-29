@@ -199,7 +199,7 @@ const PropertyCard = ({ data, isList, property,valueUf }) => {
             renderContent={renderDetailProp}
             contentExtraClass="max-w-6xl"
             modalTitle={`Detalle de propiedad`}
-            modalSubtitle={`Código de la propiedad ${id}`}
+            modalSubtitle={''}
             onCloseModal={() => {
               setModalOpen(false);
             }}

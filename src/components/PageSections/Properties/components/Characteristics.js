@@ -22,7 +22,7 @@ const Characteristics = ({ property }) => {
     BsCheckCircle,
   } = iconsList;
 
-  const lineas = description.split('\n');
+  const lineas = description?.split('\n')|| ["No cuenta con descripción"];
   const lineasIni = 5;
   const lineasViews= lineas ? lineas.length : lineasIni
 
@@ -83,7 +83,7 @@ const Characteristics = ({ property }) => {
 
         <br />
         <h5 className="text-lg">Descripción</h5>
-        <p className="text-gray-600">
+        <p className="text-gray-600 h-[150px] overflow-y-scroll">
           {/* {description ?? 'Propiedad sin descripción registrado'} */}
           {lineas.slice(0, lineasViews).map((linea, idx) => (
             <p key={idx} className="text-gray-600 mt-2">- {linea}</p>
