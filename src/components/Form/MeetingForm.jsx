@@ -239,7 +239,7 @@ const MeetingForm = ({ title, subtitle, }) => {
     <div className="rounded-[10px] p-4 my-10 xl:py-5 xl:px-2 xl:m-0 w-full xl:w-[500px] shadow-xl">
       {/* xl:w-3/5 */}
         <div className="text-center  rounded-full  font-semibold mb-2">
-          <h2 className="text-5xl xl:text-4xl font-semibold py-2 text-primary uppercase">{title}</h2>
+          <h2 className="text-5xl xl:text-4xl font-semibold py-3 text-primary uppercase">{title}</h2>
         </div>
         {/* <div className="text-start py-1 flex items-center">
           <MdPhoneIphone className='w-[30px] h-[30px] border border-2 rounded-full p-1 mx-1'/><span className='font-normal '><b>Teléfono: </b> +56 9 321 421 76 </span>
