@@ -3,6 +3,9 @@ import { Link } from 'react-scroll';
 import Button from '../Button/Button';
 import { navigationData } from '../../data/navigation';
 import { getCurrentYear } from '../../utils';
+import Logo from '../Logo/Logo';
+// import UnneLogo from '../../assets/img/logo/unne-logo.png';
+// import UnneLogoSvg from '../Icons/custom/unneLogo';
 
 const Footer = () => (
   <footer className="bg-gray-100 pt-10 pb-20 xl:px-32">
@@ -18,24 +21,24 @@ const Footer = () => (
             <div className="w-5/6">
               <h2 className="w-86 py-1 text-2xl text-start my-2 text-primary uppercase"
               >
-                Sobre Panal
+                Sobre nosotros
               </h2>
               <div className="h-56">
-                <p className="text-md text-gray-800 mt-5">
+                {/* <p className="text-md text-gray-800 mt-5">
                   <span className="font-bold text-gray-900">Dirección:</span>{' '}
                   Asturias 171, Of. 101, Las Condes, Santiago
-                </p>
+                </p> */}
                 <p className="text-md text-gray-800 mt-1">
                   <span className="font-bold text-gray-900">Teléfono:</span> +56
                   2 6465 3732
                 </p>
                 <p className="text-md text-gray-800 mt-1">
                   <span className="font-bold text-gray-900">WhatsApp:</span> +56
-                  9 3292 4867s
+                  9 3292 4867
                 </p>
                 <p className="text-md text-gray-800 mt-1">
                   <span className="font-bold text-gray-900">Correo:</span>{' '}
-                  contacto@accionpanal.cl
+                  contacto@tucorreo.cl
                 </p>
               </div>
             </div>
@@ -149,14 +152,25 @@ const Footer = () => (
       </div>
     </div>
     <hr></hr>
-    <div className='w-full flex flex-wrap justify-center'>
-    <span className="block text-sm text-neutral-700 sm:text-center w-full p-3 rounded ">
-                © {getCurrentYear()}{' '}
-                <a href="/" className="hover:tw-underline">
-                AccionPanal
+    <div className='w-full flex flex-wrap justify-between'>
+              <span className="block text-sm text-neutral-700 sm:text-center w-full p-3 rounded ">
+                © {getCurrentYear()} {" "}
+                <a href="/" className="ml-1 hover:underline">
+                  AccionPanal
                 </a>
                 . Todos los derechos reservados.
-              </span>                 
+                <span className='flex justify-end w-full items-center'>
+                  <Logo/>
+                </span> 
+                  {/* <Link to="https://unne.cl/" target='_blank' className='flex justify-center items-center'>
+                 
+                    {UnneLogo && (
+                      <a href='https://unne.cl/' className='cursor-pointer font-semibold uppercase text-xl text-neutral-600'>Red unne</a>
+                    )}
+                  </Link> */}
+              </span> 
+       
+                      
     </div>
   </footer>
 );
