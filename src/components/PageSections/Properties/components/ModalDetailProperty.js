@@ -42,7 +42,7 @@ const ModalDetailProperty = ({property}) => {
     return(
         
                  
-        <Dialog.Panel className="w-full max-w-6xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle transition-all">
+        <Dialog.Panel className="w-full max-w-6xl transform overflow-hidden rounded-sm bg-white p-6 text-left align-middle transition-all">
                   {loadingOnStart && <Spinner />}
                   {/* <Dialog.Title
                     as="h3"

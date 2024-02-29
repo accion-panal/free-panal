@@ -16,8 +16,8 @@ const Home = () => {
     <Fragment>
       <Head
         title="Inicio"
-        description="Unne es una plataforma de corretaje, donde los corredores puedan acceder a herramientas digitales que de otro modo seria difícil de acceder"
-        keywords="unne, propiedades, plataforma de corretaje, herramientas digitales, corredores, recursos, corretaje"
+        description="Como página de corretaje, donde los corredores puedan acceder a herramientas digitales que de otro modo seria difícil de acceder"
+        keywords="unne, accionpanal, propiedades, plataforma de corretaje, herramientas digitales, corredores, recursos, corretaje"
       />
       <HomeComponent />
     </Fragment>
